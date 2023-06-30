@@ -5,6 +5,36 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Address Book Program");
+
+            Console.WriteLine("Enter First Name");
+            string firstName = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name");
+            string lastName = Console.ReadLine();
+
+            Console.WriteLine("Enter Address");
+            string address = Console.ReadLine();
+
+            Console.WriteLine("Enter City Name");
+            string city = Console.ReadLine();
+
+
+            Console.WriteLine("Enter State Name");
+            string state = Console.ReadLine();
+
+            Console.WriteLine("Enter  Zip number");
+            string zip = Console.ReadLine();
+
+            Console.WriteLine("Enter Phone Number");
+            string phoneNumber = Console.ReadLine();
+
+            Console.WriteLine("Enter Email");
+            string eMail = Console.ReadLine();
+
+
+            AddressBookBuilder addressBookBuilder = new AddressBookBuilder();
+            addressBookBuilder.Add_AddressBook(firstName, lastName, address,city,state,zip,phoneNumber,eMail);
+            addressBookBuilder.Display();
         }
     }
 }
