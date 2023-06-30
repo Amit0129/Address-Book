@@ -15,10 +15,11 @@ namespace AdressBook
             Model model = new Model(firstName,lastName,address,city,state,zip,phoneNumber,eMail);
             addressBook.Add(firstName, model);
         }
-        public void Display()
+        public void AddressDisplay()
         {
             foreach (var item in addressBook)
             {
+                Console.WriteLine($"{item.Key} Contact Details");
                 Console.WriteLine("First Name is : " + item.Value.firstName);
                 Console.WriteLine("Last Name is  : " + item.Value.lastName);
                 Console.WriteLine("Address is    : " + item.Value.address);
