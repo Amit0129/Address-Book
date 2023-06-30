@@ -104,6 +104,17 @@ namespace AdressBook
                 Console.WriteLine("E-Mail is     : " + item.Value.eMail);
             }
         }
-
+        public void DeleteContact()
+        {
+            Console.WriteLine("Enter the name of the person you want to change");
+            string name = Console.ReadLine();
+            foreach (var item in addressBook)
+            {
+                if (item.Key == name)
+                {
+                    addressBook.Remove(item.Key);
+                }
+            }
+        }
     }
 }

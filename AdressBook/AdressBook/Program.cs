@@ -14,6 +14,7 @@
                 Console.WriteLine("Enter 1 for Adding contact to Address book");
                 Console.WriteLine("Enter 2 for Disply contact in Address book");
                 Console.WriteLine("Enter 3 for Edit contact in Address book");
+                Console.WriteLine("Enter 4 for Delete contact in Address book");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -25,6 +26,9 @@
                         break;
                     case 3:
                         addressBookBuilder.EditContact();
+                        break;
+                    case 4:
+                        addressBookBuilder.DeleteContact();
                         break;
                     default:
                         Console.WriteLine("Enter a valid choice");
