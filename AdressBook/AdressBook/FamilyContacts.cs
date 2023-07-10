@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace AdressBook
 {
-    public class AddressBookBuilder
+    public class FamilyContacts
     {
         private ArrayList contactList;
         private Dictionary<string, Model> contacts;
-        public AddressBookBuilder()
+        public FamilyContacts()
         {
             contactList = new ArrayList();
             contacts = new Dictionary<string, Model>();
@@ -106,6 +106,5 @@ namespace AdressBook
                 Console.WriteLine("first name doesnt exist");
             }
         }
-
     }
 }
